@@ -29,7 +29,7 @@ export function App() {
     return (
         <section className="App">
             {
-                users.map(({ userName, name, isFollowing },index) => (
+                users.map(({ userName, name, isFollowing }) => (
 
                     <TwitterFollowCard
                     // usar el id de la base de datos como key
