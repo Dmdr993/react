@@ -18,7 +18,6 @@ export function App() {
     //Independientemente si hay cambios o no
     // console.log("Se ha renderizado", name)
     return (
-
         <section className="App">
             <TwitterFollowCard
                 // Pasando estado como props
@@ -38,7 +37,6 @@ export function App() {
                 <strong>Diego Duran</strong>
             </TwitterFollowCard>
             <TwitterFollowCard
-
                 initialIsFollowing={false}
                 name="Default"
             >
