@@ -1,6 +1,6 @@
 export const TURNS = {
-    X: 'x',
-    O: 'o'
+    X: '❌',
+    O: 'O'
 }
 
 //Combinaciones ganadoras por defecto

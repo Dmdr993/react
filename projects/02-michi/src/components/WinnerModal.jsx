@@ -6,7 +6,7 @@ export function WinnerModal({winner,resetGame}) {
     return (
         <section className="winner">
             <div className="text">
-                <h2>winnerText</h2>
+                <h2>{winnerText}</h2>
                 <header className="win">
                     {winner && <Square>{winner}</Square>}
                 </header>
