@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect} from "react";
 import './App.css'
 import confetti from 'canvas-confetti';
 import { TURNS} from './constants';
@@ -54,6 +54,11 @@ function App() {
       setWinner(false);//empate
     }
   }
+  //Se ejecuta cada vez que se cambian las dependencias
+  //Mínimo se ejecuta una vez
+  useEffect(()=>{
+    console.log("useEffect")
+  },[turn,board])
   return (
     <Board resetGame={resetGame} board={board} turn={turn} winner={winner} updateBoard={updateBoard}></Board>
   )
